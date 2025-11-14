@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Validación</title>
+    <script src="./practica-02.js" defer></script>
+</head>
+<body>
+    <form id="formulario">
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <span id="error-email" style="color: red; display: none;"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="error-password" style="color: red; display: none;"></span>
+        </div>
+        <button type="submit" id="btn-enviar" disabled style="background-color: gray; color: white;">Enviar</button>
+    </form>
+</body>
+</html>
