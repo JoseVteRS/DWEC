@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 1 - Palabras Únicas Ordenadas</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.6;
+      }
+      h1 { font-size: 24px; font-weight: 600; }
+      h2 { font-size: 18px; margin-top: 30px; }
+      a { color: #333; text-decoration: none; border-bottom: 1px solid #ddd; }
+      a:hover { border-bottom-color: #333; }
+      button {
+        padding: 12px 24px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 20px;
+      }
+      button:hover { background-color: #000; }
+      #resultado {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-left: 3px solid #333;
+      }
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Práctica 1 - Palabras Únicas Ordenadas (Z-A)</h1>
+    
+    <section>
+      <h2>Enunciado:</h2>
+      <p>
+        Pide al usuario palabras continuamente hasta que el popup se deje vacío o se cancele.
+        A continuación, se eliminarán todas las palabras repetidas y además se ordenarán en
+        español, pero en orden inverso (de la Z a la A) y se mostrará el resultado por pantalla.
+      </p>
+      
+      <button onclick="ejecutarPractica1()">Iniciar Práctica 1</button>
+      
+      <div id="resultado"></div>
+      
+      <p style="margin-top: 40px;">
+        <a href="index.html">← Volver al inicio</a>
+      </p>
+    </section>
+    
+    <script src="./main.js"></script>
+    <script src="./practica-1.js"></script>
+  </body>
+</html>
+

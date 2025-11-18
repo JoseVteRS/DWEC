@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos nativos Javascript</title>
+  <style>
+    .section {
+      margin-block: 20px;
+      background-color: rgb(243, 243, 243);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .tabla-hola td {
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <h1>Ejercicios</h1>
+    <h2>Práctica 2.1. Objetos Navitos de Javascript</h2>
+
+
+    <section class="section">
+      <p><b>E1.</b> Diseña un programa con JavaScript que, a partir de una cadena de texto introducida mediante un campo
+        de
+        texto, realice las conversiones mostradas en la imagen:</p>
+      <div>
+        <label for="textoEntrada">Introduce una cadena de texto: </label>
+        <input type="text" id="textoEntrada">
+      </div>
+      <div style="margin-block: 20px;">
+        <button id="convertirBoton">Convierte la cadena</button>
+      </div>
+
+      <div>
+        <div>
+          A LA INVERSA: <input type="text" id="textoInversa" disabled>
+        </div>
+        <div>EN MAYÚSCULAS: <input type="text" id="textoMayusculas" disabled></div>
+        <div>REPETIDA: <input type="text" id="textoRepetido" disabled></div>
+        <div>INVERTIDA EN MAYÚSCULAS: <input type="text" id="textoInvertidoMayusculas" disabled></div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <p><b>E2.</b> Diseña un programa con JavaScript que introduzca, las letras de la palabra “HOLA” en las celdas de
+        una
+        tabla, tal y como se muestra en la siguiente imagen:</p>
+      <div>
+        <table class="tabla-hola" border="1">
+          <tr>
+            <td id="celda1"></td>
+            <td id="celda2"></td>
+            <td id="celda3"></td>
+            <td id="celda4"></td>
+          </tr>
+        </table>
+      </div>
+
+    </section>
+
+
+
+    <section class="section">
+      <p><b>E3.</b> Modifica el programa anterior para que, en lugar de mostrar la palabra “HOLA”, muestre la palabra
+        introducida por el usuario en un campo textual de formulario. La palabra en la tabla deberá aparecer en
+        mayúsculas, con independencia de cómo haya sido escrita la palabra en el campo de texto.</p>
+      <!-- E3 -->
+      <div style="margin-block: 20px;">
+        <input type="text" id="textoE3">
+        <button id="repetirBotonE3">REPETIR</button>
+        <table class="tabla-hola" border="1">
+          <tr id="filaE3">
+
+          </tr>
+        </table>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <p><b>E4.</b> Diseña con JavaScript un conversor de números. El usuario introducirá un número decimal en un campo
+        de texto y, al pulsar el botón, el programa realizará la conversión a las tres bases alternativas: binario,
+        octal y hexadecimal.</p>
+      <!-- E4 -->
+      <div>
+        <input type="text" id="numeroE4" size="12">
+        <button id="generarTablaE4">CONVERTEX</button>
+      </div>
+
+      <table border="1">
+        <tr>
+          <td width="120" height="40" align="center"><b>BINARI</b></td>
+          <td width="220" height="40" align="center" id="e4bin"></td>
+        </tr>
+        <tr>
+          <td width="120" height="40" align="center"><b>OCTAL</b></td>
+          <td width="220" height="40" align="center" id="e4oct"></td>
+        </tr>
+        <tr>
+          <td width="120" height="40" align="center"><b>HEXADECIMAL</b></td>
+          <td width="220" height="40" align="center" id="e4hex"></td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section class="section">
+      <p><b>E5.</b> Diseña un programa con JavaScript que, a partir de nueve números introducidos en 9 campos de texto,
+        muestre una ventana emergente indicando cuál es el mayor de todos.
+
+      <div>
+        <div>
+          <input type="text" id="num1" size="5">
+          <input type="text" id="num2" size="5">
+          <input type="text" id="num3" size="5">
+        </div>
+        <div>
+          <input type="text" id="num4" size="5">
+          <input type="text" id="num5" size="5">
+          <input type="text" id="num6" size="5">
+        </div>
+        <div>
+          <input type="text" id="num7" size="5">
+          <input type="text" id="num8" size="5">
+          <input type="text" id="num9" size="5">
+        </div>
+        <button id="encontrarMayor">ENCONTRAR MAYOR</button>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <p><b>E6.</b>
+        Diseña un programa con JavaScript que muestre mediante una ventana emergente. La fecha de hoy con el formato de
+        la imagen:</p>
+
+      <button id="e6MostrarFechaBoton">Mostrar fecha</button>
+    </section>
+
+    <section class="section">
+      <p><b>E7.</b>
+        Diseña un programa con JavaScript que pregunte al usuario su fecha de nacimiento (en formato YYYY/MM/DD) y
+        calcule cuántos días han transcurrido desde su nacimiento hasta la actualidad.</p>
+
+      <button id="e7diasNacimiento">Mostrar días</button>
+    </section>
+
+    <section class="section">
+      <p><b>E8.</b> Diseña un programa con JavaScript que permita seleccionar tu fecha de nacimiento, mediante un campo
+        de
+        formulario tipo fecha. Una vez seleccionada la fecha en el calendario, el programa informará de cuántos años
+        tienes aproximadamente.</p>
+
+      <input type="date" id="fechaNacimientoE8">
+      <button id="calcularEdadE8">Calcular edad</button>
+    </section>
+
+
+    <section class="section">
+      <p><b>E9.</b>
+        Diseña un programa con JavaScript que, mediante una expresión regular, valide el formato de una fecha
+        introducida en un campo de texto. El formato válido será DD/MM/YYYY, donde el día y el mes podrán ser expresados
+        con 1 ó 2 dígitos y el año, con 2 o 4 dígitos. El símbolo separador deberá ser la barra.
+      </p>
+
+      <div>
+        <input type="text" id="fechaE9" size="12" placeholder="DD/MM/YYYY">
+        <button id="validarFechaE9">Validar fecha</button>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>

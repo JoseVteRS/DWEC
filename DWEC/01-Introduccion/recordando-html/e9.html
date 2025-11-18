@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulari d'inscripció Cyberwall</h1>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+      </div>
+      <input type="text" id="name" name="name" required />
+      <div>
+        <label for="username">Create a user name:</label>
+      </div>
+      <input type="text" id="username" name="username" required />
+      <div>
+        <label for="password">Create a password:</label>
+      </div>
+      <input type="password" id="password" name="password" required minlength="6" maxlength="12" />
+      <br />
+      <br />
+      <div>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+      </div>
+      <div>
+        <label for="iam">I am:</label>
+        <select name="iam" id="iam">
+          <option value="student">a student</option>
+          <option value="teacher">a teacher</option>
+          <option value="business_owner">a business owner</option>
+          <option value="self_employed">self-employed</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="mobilePhone">Mobile phone:</label>
+      </div>
+      <input type="text" id="mobilePhone" name="mobilePhone" required />
+
+      <div>
+        <label for="englishLevel">Select your English level (0-10):</label>
+      </div>
+      <input type="range" id="englishLevel" name="englishLevel" />
+
+      <div>
+        <button type="submit">Sign me up</button>
+      </div>
+    </form>
+  </body>
+</html>

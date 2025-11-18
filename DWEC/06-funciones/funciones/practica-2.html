@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 2 - Contador de Palabras</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.6;
+      }
+      h1 { font-size: 24px; font-weight: 600; }
+      h2 { font-size: 18px; margin-top: 30px; }
+      a { color: #333; text-decoration: none; border-bottom: 1px solid #ddd; }
+      a:hover { border-bottom-color: #333; }
+      button {
+        padding: 12px 24px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 20px;
+      }
+      button:hover { background-color: #000; }
+      #resultado {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-left: 3px solid #333;
+      }
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Práctica 2 - Contador de Palabras con Map</h1>
+    
+    <section>
+      <h2>Enunciado:</h2>
+      <p>
+        Pide al usuario palabras continuamente hasta que el popup se deje vacío o se cancele.
+        Crear una función que recibirá todas las palabras y devolverá un mapa que contenga
+        como clave cada palabra y cuyo valor será el número de veces que aparece esa palabra
+        en el array. Mostrar los resultados por pantalla.
+      </p>
+      
+      <button onclick="ejecutarPractica2()">Iniciar Práctica 2</button>
+      
+      <div id="resultado"></div>
+      
+      <p style="margin-top: 40px;">
+        <a href="index.html">← Volver al inicio</a>
+      </p>
+    </section>
+    
+    <script src="./main.js"></script>
+    <script src="./practica-2.js"></script>
+  </body>
+</html>
+
